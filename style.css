@@ -152,7 +152,7 @@ div {
         width: 100%;
         padding: .9rem;
         border: none;
-        background: var(--water-leaf);
+        background: var(--topaz);
         color: var(--sherpa-blue);
         font-weight: 700;
         text-transform: uppercase;
@@ -186,11 +186,11 @@ div {
            div {
            grid-template-columns: repeat(3, 1fr);
 
-           button:houver {
-            background: var(--topaz);
+            button:hover {
+            background: var(--water-leaf);
             cursor: pointer;
             transition: .4s;
-           }
+            }
            }
         }
     }
@@ -206,7 +206,7 @@ div {
 
             button:hover {
                 background: var(--water-leaf);
-                cursor:pointer;
+                cursor: pointer;
                 transition: .4s;
             }
     }
