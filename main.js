@@ -16,10 +16,24 @@ function receiveTipPercentageValue(value){
     buttonSelected.classList.remove("button-selected")
    }
 
+   let customTipInput = document.querySelector("#custom-tip").valueAsNumber
+
+   if(customTipInput!== ""){
+    customTipInput.Value = ""
+   }
+
    tipPercentage = value / 100
-   console.log(tipPercentage)
 
    buttonSelected = document.querySelector(`#button-${value}`)
    buttonSelected.classList.add("button-selected")
+}
+
+function receiveCustomTipPercentageValue(){
+    if(buttonSelected !==null) {
+        buttonSelected.cassList.remove("button-selected")
+        buttonSelected = null
+    }
+
+    tipPercentage = document.querySelector("#custom-tip").valueAsNumber / 100
 }
 
